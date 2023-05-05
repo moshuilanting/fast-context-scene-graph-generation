@@ -38,20 +38,22 @@ VG_dataset
 </pre>
 
 ### Evalution
-####C-SGG PredCls evalution on VG
+#### C-SGG PredCls evalution on VG
+
 <pre><code> python eval/predcls_ckn_val.py </code></pre>
 
-####C-SGG SGGen evalution on VG
+#### C-SGG SGGen evalution on VG
 <pre><code> python eval/sggen_ckn_val.py </code></pre>
 
-####CV-SGG PredCls evalution on VG
+#### CV-SGG PredCls evalution on VG
+
 Download VG images from [Scene-Graph-Benchmark](https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch)
 
 Rewrite the _**'image_file'**_ in datapath.py according to download images'path
 
 <pre><code> python eval/predcls_vdn_val.py </code></pre>
 
-####CV-SGG SGGen evalution on VG
+#### CV-SGG SGGen evalution on VG
 <pre><code> python eval/sggen_vdn_val.py </code></pre>
 
 ### Train C-SGG
@@ -61,7 +63,7 @@ During the verification process, the loaded annotations will be saved as npy fil
 Start training
 <pre><code> python ckn_main.py </code></pre>
 
-####Acknowledgment: 
+#### Acknowledgment: 
 The VG dataset and evalutation are from [Scene-Graph-Benchmark](https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch)
 
 The yolov5 model are trained based on [yolov5](https://github.com/ultralytics/yolov5)
@@ -92,7 +94,7 @@ PSG_dataset
     └── sgg_eval.py
 </pre>
 
-####C-SGG SGGen evalution on OpenPSG
+#### C-SGG SGGen evalution on OpenPSG
 
 <pre><code>python psg_infer.py</code></pre>
 Under the /PSG_dataset folder will generation a new file *relation.json*
@@ -102,7 +104,7 @@ Evaluate newly generated results.
 Due to the processed grondtruth from *[OpenPSG](https://github.com/Jingkang50/OpenPSG) /tools/grade.py*, the computer memory is preferably >32GB
 
 
-####CV-SGG SGGen evalution on OpenPSG
+#### CV-SGG SGGen evalution on OpenPSG
 Download the images from [OpenPSG](https://github.com/Jingkang50/OpenPSG)
 
 Rewrite the _**'image_path'**_ in psg_visual_infer.py according to dataset path
@@ -111,14 +113,14 @@ Rewrite the _**'image_path'**_ in psg_visual_infer.py according to dataset path
 
 
 
-####Acknowledgment: 
+#### Acknowledgment: 
 The annotation, images, and groudtruth are from [OpenPSG](https://github.com/Jingkang50/OpenPSG) 
 
 The panoptic segmentation results are from [Panoptic SegFormer PVTv2-B5](https://github.com/zhiqi-li/Panoptic-SegFormer)
 
 <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 
 
-##OID_dataset
+## OID_dataset
 
 Download the [openimage_v6_test](https://drive.google.com/file/d/1Dkx7-ioEVffPeezeeQg8bhzo9j_8ROJM/view?usp=sharing) for object detection results and groudtruth. 
 
@@ -136,7 +138,7 @@ OID_dataset
     └── oid_evaluation.py
 </pre>
 
-####C-SGG SGGen evalution on OIDv6
+#### C-SGG SGGen evalution on OIDv6
 
 <pre><code>python oid_inference.py</code></pre>
 Under the /openimage_v6_test folder will generation a new file *eval_results.pytorch*
@@ -144,7 +146,7 @@ Under the /openimage_v6_test folder will generation a new file *eval_results.pyt
 <pre><code>python oid_evaluation.py</code></pre>
 Evaluate newly generated results
 
-####CV-SGG SGGen evalution on OIDv6
+#### CV-SGG SGGen evalution on OIDv6
 Download the processed OpenImagev6 dataset from [PySGG](https://github.com/SHTUPLUS/PySGG/blob/main/DATASET.md)
 
 Rewrite the _**'yourpath'**_ in oid_visual_inference.py according to dataset path
@@ -154,6 +156,6 @@ Under the /openimage_v6_test folder will generation a new file *eval_results.pyt
 <pre><code>python oid_evaluation.py</code></pre>
 Evaluate newly generated results
 
-####Acknowledgment: 
+#### Acknowledgment: 
 The processed datasets and object detection results are from [PySGG](https://github.com/SHTUPLUS/PySGG)
 

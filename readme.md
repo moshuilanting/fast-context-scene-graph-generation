@@ -3,7 +3,7 @@
 
 <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 
 
-![Real-Time Scene Graph Generation](real-time SGG.gif)
+![Real-Time Scene Graph Generation](real-time-SGG.gif)
 
 
 

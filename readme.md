@@ -16,6 +16,8 @@ Basic operating requirement <pre><code>pip install -r requirements.txt</code></p
 ## VG_dataset
 Download the VG annotations [dataset](https://drive.google.com/file/d/19NEoW3oylGw0y2AA5iegocPHO6yxpb-f/view?usp=share_link)
 
+Download the evaluation folder [evaluation](https://drive.google.com/file/d/1csTimTVH9s7kNet_fPkVYR8yHz8Li-EJ/view?usp=share_link)
+
 Download the yolov5 object detection pre-trained model [yolol_object_test_28.pt](https://drive.google.com/file/d/1f77tyIHTyDyRBupzA7vz9S82oc7DZ8E3/view?usp=share_link)
 
 Then put them into the VG_dataset folder

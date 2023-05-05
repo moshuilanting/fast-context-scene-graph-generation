@@ -7,9 +7,9 @@
 [![real-time SGG](https://i.ytimg.com/vi/EbVNStzfRW8/hqdefault.jpg)](https://youtu.be/EbVNStzfRW8 "real-time SGG")
 
 
-This code contains three parts, corresponding to the three data sets of VG, PSG and OIDv6.
+This repository includes the code for scene graph generation on three datasets VG, OpenPSG and OIDv6.
 
-Basic operating requirement <pre><code>pip install -r requirements.txt</code></pre>
+Basic operating requirement: <pre><code>pip install -r requirements.txt</code></pre>
 
 
 # Contents
@@ -161,6 +161,6 @@ Under the /openimage_v6_test folder will generation a new file *eval_results.pyt
 <pre><code>python oid_evaluation.py</code></pre>
 Evaluate newly generated results
 
-#### Acknowledgment: 
+#### Acknowledgment:
 The processed datasets and object detection results are from [PySGG](https://github.com/SHTUPLUS/PySGG)
 

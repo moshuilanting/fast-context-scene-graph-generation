@@ -69,17 +69,6 @@ def extract_bboxes(mask):
 
 if __name__=="__main__":
 
-    '''
-    Engineering method to improve the recall rate of tail predicates
-    relation_class_mask[relation_class < 200] = 0.3 if used
-    '''
-    relation_class = [100000, 39332, 10845, 45032, 52974, 9825, 20484, 3859, 124, 7, 110, 189, 7125, 1142, 185, 18412,
-                      1469,5289, 839, 73, 163, 2863, 10207, 2306, 5098, 83, 16, 1243, 114, 64, 155, 132, 8, 339, 36, 10, 16,
-                      1865, 944, 69, 314, 7, 19, 398, 177, 133, 590, 1995, 6624, 5611, 562, 73, 728, 48, 26, 511, 804]
-    relation_class = np.array(relation_class)
-    relation_class_mask = np.zeros(relation_class.shape)
-    relation_class_mask[relation_class < 200] = 0.0 # 0.3
-
     print('load our model')
     rel_model = FC_Net('PSG')
     model_dict = rel_model.state_dict()

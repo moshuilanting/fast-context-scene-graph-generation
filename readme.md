@@ -4,7 +4,7 @@
 <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 
 
 
-[![real-time SGG](https://i.ytimg.com/vi/EbVNStzfRW8/hqdefault.jpg#pic_center)](https://youtu.be/EbVNStzfRW8 "real-time SGG")
+[![real-time SGG](https://i.ytimg.com/vi/EbVNStzfRW8/hqdefault.jpg)](https://youtu.be/EbVNStzfRW8 "real-time SGG")
 
 
 This code contains three parts, corresponding to the three data sets of VG, PSG and OIDv6.
@@ -96,7 +96,7 @@ PSG_dataset
     ├── psg_results (previous best results)
     ├── psg_infer.py 
     ├── psg_visual_infer.py
-    ├── relation.json
+    ├── requirements.txt (OpenPSG depends on mmcv==1.4.3 and mmdet==2.20.0, the available environment is uploaded here)
     └── sgg_eval.py
 </pre>
 
@@ -118,9 +118,8 @@ Rewrite the _**'image_path'**_ in psg_visual_infer.py according to dataset path
 <pre><code>python sgg_eval.py #evalute</code></pre>
 
 
-
 #### Acknowledgment: 
-The annotation, images, and groudtruth are from [OpenPSG](https://github.com/Jingkang50/OpenPSG) 
+The annotation, images, and groudtruth are from [OpenPSG](https://github.com/Jingkang50/OpenPSG), any environment configuration issues can also refer to it.
 
 The panoptic segmentation results are from [Panoptic SegFormer PVTv2-B5](https://github.com/zhiqi-li/Panoptic-SegFormer)
 

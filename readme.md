@@ -5,6 +5,7 @@
 
 <img src="https://github.com/moshuilanting/fast-context-scene-graph-generation/blob/main/real-time-SGG.gif#pic_center" width="800">
 
+[![real-time SGG](https://i.ytimg.com/vi/EbVNStzfRW8/hqdefault.jpg)](https://youtu.be/EbVNStzfRW8 "real-time SGG")
 
 
 This code contains three parts, corresponding to the three data sets of VG, PSG and OIDv6.
@@ -58,12 +59,15 @@ Rewrite the _**'image_file'**_ in datapath.py according to download images'path
 #### CV-SGG SGGen evalution on VG
 <pre><code> python eval/sggen_vdn_val.py </code></pre>
 
-### Train C-SGG
+### Train 
 During the verification process, the loaded annotations will be saved as npy files for subsequent fast loading. Before training, the npy file of the test set needs to be deleted.
 <pre><code> rm *.npy *.pkl </code></pre>
 
 Start training
+#### train C-SGG
 <pre><code> python ckn_main.py </code></pre>
+#### train CV-SGG 
+<pre><code> python vdn_main.py </code></pre>
 
 #### Acknowledgment: 
 The VG dataset and evalutation are from [Scene-Graph-Benchmark](https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch)
@@ -90,6 +94,7 @@ PSG_dataset
     ├── openpsg (from [OpenPSG] code repository)
     ├── psg_eval_results.pytorch (contains groudtruth for facilitate evaluation)
     ├── SegFromer_PVTV (contains panoptic segmentation results)
+    ├── psg_results (previous best results)
     ├── psg_infer.py 
     ├── psg_visual_infer.py
     ├── relation.json

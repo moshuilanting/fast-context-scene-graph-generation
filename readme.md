@@ -3,9 +3,8 @@
 
 <hr style="height:1px;border:none;border-top:1px solid #555555;" /> 
 
-<img src="https://github.com/moshuilanting/fast-context-scene-graph-generation/blob/main/real-time-SGG.gif#pic_center" width="800">
 
-[![real-time SGG](https://i.ytimg.com/vi/EbVNStzfRW8/hqdefault.jpg)](https://youtu.be/EbVNStzfRW8 "real-time SGG")
+[![real-time SGG](https://i.ytimg.com/vi/EbVNStzfRW8/hqdefault.jpg#pic_center)](https://youtu.be/EbVNStzfRW8 "real-time SGG")
 
 
 This code contains three parts, corresponding to the three data sets of VG, PSG and OIDv6.

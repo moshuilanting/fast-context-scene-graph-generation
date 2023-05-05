@@ -51,7 +51,7 @@ VG_dataset
 
 Download VG images from [Scene-Graph-Benchmark](https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch)
 
-Rewrite the _**'image_file'**_ in datapath.py according to download images'path
+Modify the _**'image_file'**_ in datapath.py according to download images'path
 
 <pre><code> python eval/predcls_vdn_val.py </code></pre>
 
@@ -154,7 +154,7 @@ Evaluate newly generated results
 #### CV-SGG SGGen evalution on OIDv6
 Download the processed OpenImagev6 dataset from [PySGG](https://github.com/SHTUPLUS/PySGG/blob/main/DATASET.md)
 
-Rewrite the _**'yourpath'**_ in oid_visual_inference.py according to dataset path
+Modify the _**'yourpath'**_ in oid_visual_inference.py according to dataset path
 <pre><code>python oid_visual_inference.py</code></pre>
 Under the /openimage_v6_test folder will generation a new file *eval_results.pytorch*
 
